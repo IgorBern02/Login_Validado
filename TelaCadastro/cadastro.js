@@ -142,7 +142,7 @@ function handleCredentialResponse(response) {
             icon: "success",
         })
 
-        window.location.replace("../HTML/paginaInicial.html");
+        window.location.replace("../TelaInicial/paginaInicial.html");
         
         return;
     }
@@ -183,7 +183,7 @@ function register(form){
     firebase.auth().createUserWithEmailAndPassword(
         emailInput, password
     ).then(() => {
-        window.location.replace("../HTML/index.html");
+        window.location.replace("../index.html");
     }).catch(error => {
         getErrorMessage(error);
     });
