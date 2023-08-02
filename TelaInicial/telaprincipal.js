@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     new TypeIt("#sejaBemVindo", {
-        speed: 80,
+        speed: 60,
         waitUntilVisible: true,
       })
         .type("Seeja", { delay: 300 })
@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function logout() {
   firebase.auth().signOut().then(() => {
-    window.location.replace("../TelaPrincipal/index.html");
+    window.location.replace("../index.html");
   }).catch(() => {
     swal({
       title: "Erro ao fazer logout",
