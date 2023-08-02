@@ -106,7 +106,7 @@ body .container .conteudo-container form .icon-eyes {
     position: absolute;
     top: 41.5%;
     right: 3%;
-    background: url('../img/show.png');
+    background: url('../images/show.png');
     background-size: cover;
     width: 25px;
     height: 25px;
@@ -115,7 +115,7 @@ body .container .conteudo-container form .icon-eyes {
 }
 
 body .container .conteudo-container form .icon-eyes.hide {
-    background: url('../img/hide.png');
+    background: url('../images/hide.png');
     background-size: cover;
 }
 
