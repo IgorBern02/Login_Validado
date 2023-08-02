@@ -93,7 +93,7 @@ function getErrorMessage(error) {
             text: "Crie uma nova senha com o link enviado ao seu Email informado",
             icon: "success",
         });
-        window.location.replace("../index.html");
+        window.location.replace("../TelaPrincipal/index.html");
     }).catch(error => {
         getErrorMessage(error);
     });
