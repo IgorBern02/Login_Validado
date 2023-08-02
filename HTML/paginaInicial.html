@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeira Pagina</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/paginaInicial.css" media="screen" />
+</head>
+<body>
+    <header>
+        <button type="button" onclick="logout()"> Sair </button>
+    </header>
+    <main>
+    <h1 id="sejaBemVindo"></h1>
+    <p></p>
+    </main>
+
+
+    <script src="../JS/paginaInicial.js"></script>
+    <script crossorigin="anonymous" src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://accounts.google.com/gsi/client" async></script>
+    <script src="https://www.gstatic.com/firebasejs/10.1.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.1.0/firebase-auth-compat.js"></script>
+    <script>
+        const firebaseConfig = {
+    apiKey: "AIzaSyD-0jTgpIQov7OO0MosMvsyDEV6prk7mZ4",
+    authDomain: "primeiro-login-c3dca.firebaseapp.com",
+    projectId: "primeiro-login-c3dca",
+    storageBucket: "primeiro-login-c3dca.appspot.com",
+    messagingSenderId: "1077257672741",
+    appId: "1:1077257672741:web:51cf5e668df164f2d487cc"
+  };
+
+  firebase.initializeApp(firebaseConfig);
+
+  
+    </script>
+</body>
+</html>

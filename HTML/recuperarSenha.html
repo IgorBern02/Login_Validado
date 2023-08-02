@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Recuperção de conta </title>
+    <link rel="stylesheet" type="text/css" href="/CSS/recuperacaoSenha.css" media="screen" />
+</head>
+
+<body>
+    <div class="bg-image"></div>
+    <section class="container">
+        <header>
+            <h1 class="title"> Recuperção de Senha </h1>
+            <a href="index.html"><img src="/IMG/arrow-small-left.png" alt="Backup"></a>
+        </header>
+
+        <section class="conteudo-container">
+            <form id="form">
+                <label for="Email">Email</label>
+                <input type="email" id="email" name="Email" placeholder="Email">
+                <div id="result"></div>
+
+                <h2> Mandar código de recuperação </h2>
+
+                <button type="submit" id="join-up" onclick="recoverPassword()"> Confirm </button>
+            </form>
+        </section>
+
+        <script src="/JS/recuperacaoSenha.js"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/10.1.0/firebase-app-compat.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/10.1.0/firebase-auth-compat.js"></script>
+        <script>
+            const firebaseConfig = {
+                apiKey: "AIzaSyD-0jTgpIQov7OO0MosMvsyDEV6prk7mZ4",
+                authDomain: "primeiro-login-c3dca.firebaseapp.com",
+                projectId: "primeiro-login-c3dca",
+                storageBucket: "primeiro-login-c3dca.appspot.com",
+                messagingSenderId: "1077257672741",
+                appId: "1:1077257672741:web:51cf5e668df164f2d487cc"
+            };
+
+            firebase.initializeApp(firebaseConfig);
+        </script>
+</body>
+
+</html>

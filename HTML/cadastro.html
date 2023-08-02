@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/cadastro.css" media="screen" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://unpkg.com/jwt-decode/build/jwt-decode.js"></script>
+</head>
+
+<body>
+    <div class="bg-image"></div>
+    <section class="container">
+        <header>
+            <h1 class="title"> Cadastro </h1>
+            <a href="index.html"><img src="../IMG/arrow-small-left.png" alt="Backup"></a>
+        </header>
+
+        <section class="conteudo-container">
+            <form id="form">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Username">
+
+                <label for="Email">Email</label>
+                <input type="email" id="Email" name="Email" placeholder="Email">
+
+                <label for="Password">Password</label>
+                <input type="password" class="Password" name="Password" placeholder="Digit Your Password" maxlength="15">
+                <div class="icon-eyes" onclick="showHide()"></div>
+
+                <label for="ConfirmPassword"> </label>
+                <input type="password" class="ConfirmPassword" name="Password" placeholder="Confirm Your Password" maxlength="15">
+                <div class="icon-eyes" onclick="showHide()"></div>
+
+                <section class="conteudo-container2">
+                    <h2> Register with </h2>
+                    <div class="images">
+                        <a href="#" id="JoinGoogle"></a>
+                    </div>
+                </section>
+
+                <button type="submit" id="join-up" onclick="register()" > Confirm </button>
+            </form>
+
+            <script src="../JS/cadastro.js"></script>
+            <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+            <script src="https://accounts.google.com/gsi/client" async></script>
+            <script src="https://www.gstatic.com/firebasejs/10.1.0/firebase-app-compat.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/10.1.0/firebase-auth-compat.js"></script>
+            <script>
+                const firebaseConfig = {
+                    apiKey: "AIzaSyD-0jTgpIQov7OO0MosMvsyDEV6prk7mZ4",
+                    authDomain: "primeiro-login-c3dca.firebaseapp.com",
+                    projectId: "primeiro-login-c3dca",
+                    storageBucket: "primeiro-login-c3dca.appspot.com",
+                    messagingSenderId: "1077257672741",
+                    appId: "1:1077257672741:web:51cf5e668df164f2d487cc"
+                };
+    
+                firebase.initializeApp(firebaseConfig);
+            </script>
+</body>
+
+</html>

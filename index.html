@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/style.css" media="screen" />
+    <script src="https://unpkg.com/jwt-decode/build/jwt-decode.js"></script>
+</head>
+
+<body>
+    <div class="bg-image"></div>
+    <section class="container">
+        <header>
+            <h1 class="title"> Login </h1>
+        </header>
+
+        <section class="conteudo-container">
+            <form id="form">
+                <label for="Email">Email</label>
+                <input type="email" id="email" class="inputEmail success" name="Email" placeholder="Email">
+
+                <label for="Password">Password</label>
+                <input type="password" class="Password error" name="Password" placeholder="Digit Your Password" maxlength="15">
+                <div class="icon-eyes" onclick="showHide()"></div>
+
+                <div id="forgotPassword">
+                    <p> Forgot Your Password? </p>
+
+                    <a href="recuperarSenha.html" id="recover-it" > Recover It </a>
+                </div>
+
+
+                <button type="submit" id="join-up"> Join Up </button>
+            </form>
+
+
+            <section class="conteudo-container2">
+                <h2> Enter with </h2>
+                <div class="images">
+                    <a href="#" id="JoinGoogle"></a>
+                </div>
+
+                <div class="line">
+                    <div id="ball-line"></div>
+                </div>
+
+                <div class="makeResgister">
+                    <h3> Don't you have register? </h3>
+                    <a href="cadastro.html"> Register Now </a>
+                </div>
+            </section>
+        </section>
+    </section>
+    <script src="../JS/index.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://accounts.google.com/gsi/client" async></script>
+    <script src="https://www.gstatic.com/firebasejs/10.1.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.1.0/firebase-auth-compat.js"></script>
+    <script>
+        const firebaseConfig = {
+    apiKey: "AIzaSyD-0jTgpIQov7OO0MosMvsyDEV6prk7mZ4",
+    authDomain: "primeiro-login-c3dca.firebaseapp.com",
+    projectId: "primeiro-login-c3dca",
+    storageBucket: "primeiro-login-c3dca.appspot.com",
+    messagingSenderId: "1077257672741",
+    appId: "1:1077257672741:web:51cf5e668df164f2d487cc"
+  };
+
+  firebase.initializeApp(firebaseConfig);
+
+  
+    </script>
+</body>
+
+</html>
