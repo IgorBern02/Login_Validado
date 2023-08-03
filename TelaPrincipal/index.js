@@ -86,7 +86,7 @@ function login(form) {
     firebase.auth().signInWithEmailAndPassword(
         form.email.value, form.Password.value
         ).then(response => {
-            window.location.replace("../TelaInicial/telaprincipal.html");
+            window.location.replace("telaprincipal.html");
     }).catch(error => {
         getErrorMessage(error);
     });   
@@ -125,7 +125,7 @@ function handleCredentialResponse(response) {
             icon: "success",
         })
 
-        window.location.replace("../TelaInicial/telaprincipal.html");
+        window.location.replace("telaprincipal.html");
 
         return;
     }
