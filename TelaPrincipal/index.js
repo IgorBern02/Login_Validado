@@ -49,7 +49,7 @@ form.addEventListener("submit", (event) => {
                 text: "Seja Bem-Vindo!",
                 icon: "success",
             });
-            window.location.replace("../TelaInicial/telaprincipal.html");
+            window.location.replace("telaprincipal.html");
     }).catch(error => {
         getErrorMessage(error);
     });
