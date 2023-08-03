@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function logout() {
   firebase.auth().signOut().then(() => {
-    window.location.replace("../index.html");
+    window.location.replace("index.html");
   }).catch(() => {
     swal({
       title: "Erro ao fazer logout",
